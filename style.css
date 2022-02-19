@@ -2,197 +2,247 @@
     box-sizing: border-box;
 }
 
-.container{
-    width: 942px;
-    margin: 0 auto;
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
     height: 100%;
-    margin-bottom: 119px;
+    width: 100%;
+}
+
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.preview{
+    background: url(preview.png) center no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.link{
+    font-weight: 700;
+    font-size: 14px;
+
+    color: #FFFFFF;
+}
+
+.link-border{
+    border: 2px solid #FFFFFF;
+    padding: 7px 15px;
+    border-radius: 20px;
+    margin-left: 15px;
 }
 
 .header{
     display: flex;
-    align-content: center;
-    justify-content:space-between ;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px ;
+    margin-bottom: 125px;
 }
 
-.menu{
+.buttons{
     display: flex;
     align-items: center;
 }
 
-.menu-link{
-    text-transform: uppercase;
-    text-decoration:none ;
-    font-size: 14px;
-    font-family: 'Montserrat';
-    color: #FED136;
-    line-height: 41px;
+.preview-content{
+    text-align: center;
 }
 
-.menu-item{
-    list-style-type: none;
-    margin-right: 42px;
-}
-
-.logo{
-    font-style: normal;
-    font-weight: normal;
-    width: 153px;
-    height: 53px;
-}
-
-.tittle-services{
-    font-family: 'Montserrat';
+.preview-title{
     font-weight: 700;
-    font-size: 40px;
-    color: #222222;
+    font-size: 52px;
+    line-height: 63px;
     text-transform: uppercase;
-    padding-top: 92px;
-}
-
-.services{
-    margin-top: 92px;
-}
-
-.menu-item:last-child{
-    margin-right: 0;
-}
-
-.title{
-    text-align: center;
-    margin-bottom: 120px;
-}
-
-.tittle-item{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.text-item{
-    color: #777777;
-    font-family: 'Roboto Slab', serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: -0.35px;
-    line-height: 16px;
-}
-
-.services-services{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 0;
-}
-
-.services-item{
-    margin-right: 56;
-    text-align: center;
-}
-
-.form{
-    background: #222222;
-    height: 598px;
-}
-
-body{
-    margin: 0;
-}
-
-
-.tittle-form{
-    text-align: center;
-    margin-bottom: 124px;
-}
-
-.white{
     color: #FFFFFF;
+    max-width: 508px;
+    margin: 0 auto;
+    margin-bottom: 36px;
 }
 
-.form-input{
-    border: 1px solid #CCCCCC;
-    background: #FFFFFF;
+.preview-text{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
 
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: -0.35px;
-    text-transform: uppercase;
-    color: #BBBBBB;
-    outline: none;
-    padding: 12px 20px 21px 20px;
-    border-radius: 4px;
-    width: 100%;
-
-    margin-bottom: 28px;
-}
-
-.form-input:last-child{
-    margin-bottom: 0;
-}
-
-::placeholder{
-    font-size: 14px;
-    color: #BBBBBB;
-}
-
-.form-input:focus{
-    border-color: #FED136;
-}
-
-.form-textarea{
-    height: 212px;
-}
-
-textarea{
-    resize: none;
-}
-
-.form-content{
-    display: flex;
-}
-
-.form-col{
-    margin-right: 27px;
-    flex:1;
-}
-
-.form-col:last-child{
-    margin-right: 0;
-}
-
-.contact-us{
-    margin-top: 92px;
+    color: #FFFFFF;
+    margin-bottom: 33px;
 }
 
 .button{
-    background: #FED136;
-    padding: 18px 33px 28px 33px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-
+    font-weight: 700;
+    font-size: 14px;
     color: #FFFFFF;
-    border-radius: 4px;
+    background: #FF4E50;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 23px;
+
+    cursor: pointer;
 }
 
-.button-item{
-    margin-top:27px ;
+.team{
+    padding: 64px 0 72px 0;
+}
+
+.team-title{
+    font-weight: 700;
+    font-size: 22px;
     text-align: center;
+    color: #333333;
+    margin-bottom: 35px;
 }
 
-.logo-services{
+.button-border{
+    background: transparent;
+    border-color: #FF4E50;
+    color: #FF4E50;
+    padding: 11px 31px;
+}
+
+.team-list{
+    display: flex;
+}
+
+.team-item:last-child{
+    margin-right: 0;
+}
+
+.team-item{
+    text-align: center;
+    margin-right: 30px;
+}
+
+.team-avatar{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+}
+
+.team-button{
+    text-align: center;
+    margin-top: 37px;
+}
+
+.team-avatar-icon{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 69px;
-    border: 3px solid #FED136;
+    background: #FF4E50;
+    border: 4px solid #FFFFFF;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
+
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+}
+
+.green{
+    background: #1CD7AD;
+}
+
+.yellow{
+    background: #FFA507;
+}
+
+.blue{
+    background: #4E73DB;
+}
+
+.team-name{
+    font-weight: 700;
+    font-size: 14.0112px;
+
+    color: #333333;
+    margin-bottom: 13px;
+}
+
+.team-info{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14.0112px;
+    line-height: 16px;
+    color: #666666;
+}
+
+@media screen and (max-width:480px){
+    .preview-title{
+        font-size: 30px;
+        margin-bottom: 12px;
+        line-height: 37px;
+    }
+
+    .preview-text{
+        font-size: 30px;
+        margin-bottom: 17px;
+    }
+
+    .header{
+        flex-direction: column-reverse;
+        margin-bottom: 22px;
+    }
+
+    .logo{
+        margin-top: 112px;
+    }
+}
+
+@media screen and (max-width:520px){
+    .team-item{
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    .team-list{
+        flex-wrap: wrap;
+        margin-bottom: -64px;
+        justify-content: center;
+    }
+
+    .team-item{
+        width: 35%;
+        margin-bottom: 64px;
+    }
+
+    .team-item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .team-info{
+        max-width: 200px;
+        margin: 0 auto ;
+    }
+
+    .container{
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    .button-border{
+        margin-top: 38px;
+    }
 }
