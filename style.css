@@ -188,15 +188,25 @@ h1,h2,h3,p{
 }
 
 @media screen and (max-width:480px){
+    .team-list{
+        flex-wrap: wrap;
+    }
+
+    .team-item{
+        display: block;
+    }
+
     .preview-title{
         font-size: 30px;
         margin-bottom: 12px;
         line-height: 37px;
+        width: 307px;
     }
 
     .preview-text{
         font-size: 30px;
         margin-bottom: 17px;
+        width: 247px;
     }
 
     .header{
@@ -207,12 +217,14 @@ h1,h2,h3,p{
     .logo{
         margin-top: 112px;
     }
-}
 
-@media screen and (max-width:520px){
-    .team-item{
-        width: 100%;
-        margin-right: 0;
+    .button-border{
+        margin-top: 29px;
+    }
+
+    .button{
+        padding: 12px 56px;
+        font-size: 13.9987px;;
     }
 }
 
